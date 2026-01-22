@@ -13,6 +13,7 @@ export default function Home() {
       try {
         await fetch(G_SHEET_URL, {
           method: "POST",
+          mode: "no-cors",
           headers: {
             "Content-Type": "application/json",
           },
